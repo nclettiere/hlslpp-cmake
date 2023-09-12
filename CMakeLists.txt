@@ -4,8 +4,6 @@ project(hlslpp CXX)
 
 set(PWD "${CMAKE_CURRENT_SOURCE_DIR}")
 
-message(STATUS "HLSLPP: ${PWD}")
-
 set(HLSLPP_HEADERS
 	"${PWD}/include/hlsl++_bitmask.h"
 	"${PWD}/include/hlsl++_common.h"
