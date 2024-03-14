@@ -23,7 +23,6 @@
 
 // Force hlslpp and std to live in the same namespace to account for name clashes and ambiguities
 using namespace std;
-using namespace hlslpp;
 
 // Temporary until we properly do it multiplatform
 #if defined(_MSC_VER) && defined(_WIN64) && !defined(HLSLPP_ARM)

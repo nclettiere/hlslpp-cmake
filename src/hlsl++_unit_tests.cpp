@@ -19,8 +19,6 @@ const float deg2rad = 3.14159265f / 180.0f;
 
 namespace hlslpp_unit
 {
-	using namespace hlslpp;
-
 	Config UnitTestConfig;
 	CurrentTest TestState;
 	CurrentTestCase TestCaseState;

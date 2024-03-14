@@ -6,27 +6,27 @@
 
 void Declaration()
 {
-	hlslpp::float1 f1;
-	hlslpp::float2 f2;
-	hlslpp::float3 f3;
-	hlslpp::float4 f4;
+	float1 f1;
+	float2 f2;
+	float3 f3;
+	float4 f4;
 
-	hlslpp::int1 i1;
-	hlslpp::int2 i2;
-	hlslpp::int3 i3;
-	hlslpp::int4 i4;
+	int1 i1;
+	int2 i2;
+	int3 i3;
+	int4 i4;
 
-	hlslpp::uint1 ui1;
-	hlslpp::uint2 ui2;
-	hlslpp::uint3 ui3;
-	hlslpp::uint4 ui4;
+	uint1 ui1;
+	uint2 ui2;
+	uint3 ui3;
+	uint4 ui4;
 
 #if defined(HLSLPP_DOUBLE)
-	hlslpp::double1 d1;
-	hlslpp::double2 d2;
-	hlslpp::double3 d3;
-	hlslpp::double4 d4;
+	double1 d1;
+	double2 d2;
+	double3 d3;
+	double4 d4;
 #endif
 
-	hlslpp::quaternion q;
+	quaternion q;
 }
