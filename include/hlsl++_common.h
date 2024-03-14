@@ -126,33 +126,16 @@ namespace hlslpp
 	#define hlslpp_enable_if_number(T) typename hlslpp::enable_if<hlslpp::is_arithmetic<T>::value, void*>::type = nullptr
 	
 	#define hlslpp_enable_if_number_2(T1, T2) \
-			typename hlslpp::enable_if< \
-			hlslpp::is_arithmetic<T1>::value * \
-			hlslpp::is_arithmetic<T2>::value, void*>::type = nullptr
+			typename hlslpp::enable_if<hlslpp::is_arithmetic2<T1, T2>::value, void*>::type = nullptr
 	
 	#define hlslpp_enable_if_number_3(T1, T2, T3) \
-			typename hlslpp::enable_if< \
-			hlslpp::is_arithmetic<T1>::value * \
-			hlslpp::is_arithmetic<T2>::value * \
-			hlslpp::is_arithmetic<T3>::value, void*>::type = nullptr
+			typename hlslpp::enable_if<hlslpp::is_arithmetic3<T1, T2, T3>::value, void*>::type = nullptr
 	
 	#define hlslpp_enable_if_number_4(T1, T2, T3, T4) \
-			typename hlslpp::enable_if< \
-			hlslpp::is_arithmetic<T1>::value * \
-			hlslpp::is_arithmetic<T2>::value * \
-			hlslpp::is_arithmetic<T3>::value * \
-			hlslpp::is_arithmetic<T4>::value, void*>::type = nullptr
+			typename hlslpp::enable_if<hlslpp::is_arithmetic4<T1, T2, T3, T4>::value, void*>::type = nullptr
 
 	#define hlslpp_enable_if_number_8(T1, T2, T3, T4, T5, T6, T7, T8) \
-			typename hlslpp::enable_if< \
-			hlslpp::is_arithmetic<T1>::value * \
-			hlslpp::is_arithmetic<T2>::value * \
-			hlslpp::is_arithmetic<T3>::value * \
-			hlslpp::is_arithmetic<T4>::value * \
-			hlslpp::is_arithmetic<T5>::value * \
-			hlslpp::is_arithmetic<T6>::value * \
-			hlslpp::is_arithmetic<T7>::value * \
-			hlslpp::is_arithmetic<T8>::value, void*>::type = nullptr
+			typename hlslpp::enable_if<hlslpp::is_arithmetic8<T1, T2, T3, T4, T5, T6, T7, T8>::value, void*>::type = nullptr
 
 	// Helper intrinsics
 
@@ -340,17 +323,14 @@ namespace hlslpp
 	struct float1x2;
 	struct float1x3;
 	struct float1x4;
-
 	struct float2x1;
 	struct float2x2;
 	struct float2x3;
 	struct float2x4;
-
 	struct float3x1;
 	struct float3x2;
 	struct float3x3;
 	struct float3x4;
-
 	struct float4x1;
 	struct float4x2;
 	struct float4x3;
@@ -383,17 +363,14 @@ namespace hlslpp
 	typedef float1x2 float32_t1x2;
 	typedef float1x3 float32_t1x3;
 	typedef float1x4 float32_t1x4;
-
 	typedef float2x1 float32_t2x1;
 	typedef float2x2 float32_t2x2;
 	typedef float2x3 float32_t2x3;
 	typedef float2x4 float32_t2x4;
-
 	typedef float3x1 float32_t3x1;
 	typedef float3x2 float32_t3x2;
 	typedef float3x3 float32_t3x3;
 	typedef float3x4 float32_t3x4;
-
 	typedef float4x1 float32_t4x1;
 	typedef float4x2 float32_t4x2;
 	typedef float4x3 float32_t4x3;
